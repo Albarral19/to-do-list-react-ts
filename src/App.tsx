@@ -7,12 +7,11 @@ export function App() {
   return (
     <div>
       <Header />
-      <div className="content mx-4 md:mx-auto">
+      <div className="container mx-auto px-4">
         <NewTask />
-
         <div className="to-do-content">
-          <header>
-            <div className="created-tasks">
+          <header className="">
+            <div className="text-sky-600">
               Tarefas Criadas
               <span>0</span>
             </div>

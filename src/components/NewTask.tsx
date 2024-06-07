@@ -3,9 +3,9 @@ import { PlusCircle } from "@phosphor-icons/react";
 export function NewTask() {
   return (
     <div>
-      <form className="flex justify-center items-center gap-2 -mt-7">
+      <form className="flex items-center justify-center gap-2 -mt-7">
         <input
-          className="w-[640px] h-14 bg-zinc-800 border-zinc-950 border rounded-lg p-4 focus:outline-none focus:ring focus:ring-indigo-600 text-zinc-300 placeholder:text-zinc-500"
+          className="w-full xl:w-[960px] h-14 bg-zinc-800 border-zinc-950 border rounded-lg p-4 focus:outline-none focus:ring focus:ring-indigo-600 text-zinc-300 placeholder:text-zinc-500"
           type="text"
           placeholder="Adicione uma nova tarefa"
         />
