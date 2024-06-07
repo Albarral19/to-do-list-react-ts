@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +11,6 @@
 }
 
 :root {
-  font-size: 62.5%;
-
   --gray-100: #f2f2f2;
   --gray-200: #d9d9d9;
   --gray-300: #808080;
@@ -36,6 +38,5 @@ textarea,
 button {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.4;
 }
