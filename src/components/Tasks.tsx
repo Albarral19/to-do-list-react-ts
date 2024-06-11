@@ -4,22 +4,22 @@ import { Task } from "./Task";
 export function Tasks() {
   return (
     <div>
-      <header className="flex justify-between pt-16 pb-6 rounded-lg font-bold">
-        <div className="flex gap-2 items-center">
+      <header className="flex justify-between rounded-lg pb-6 pt-16 font-bold">
+        <div className="flex items-center gap-2">
           <span className="text-sky-500">Tarefas criadas</span>
-          <span className="bg-zinc-800 text-zinc-200 px-2 py-1 rounded-full text-xs flex justify-center leading-3">
+          <span className="flex justify-center rounded-full bg-zinc-800 px-2 py-1 text-xs leading-3 text-zinc-200">
             0
           </span>
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <span className="text-indigo-400">Concluídas</span>
-          <span className="bg-zinc-800 text-zinc-200 px-2 py-1 rounded-full text-xs flex justify-center leading-3">
+          <span className="flex justify-center rounded-full bg-zinc-800 px-2 py-1 text-xs leading-3 text-zinc-200">
             0
           </span>
         </div>
       </header>
       <main>
-        <div className="text-zinc-500 text-base flex leading-6 flex-col justify-center items-center border-t-zinc-800 border-t rounded-lg py-16">
+        <div className="flex flex-col items-center justify-center rounded-lg border-t border-t-zinc-800 py-16 text-base leading-6 text-zinc-500">
           <img
             src={ClipboardText}
             alt="Imagem de um clipboard"

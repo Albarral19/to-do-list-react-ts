@@ -4,9 +4,9 @@ import { Tasks } from "./components/Tasks";
 
 export function App() {
   return (
-    <div className="bg-zinc-900 h-screen">
+    <div className="h-screen bg-zinc-900">
       <Header />
-      <div className="container mx-auto px-4 w-full md:w-[736px]">
+      <div className="container mx-auto w-full px-4 md:w-[736px]">
         <NewTask />
         <Tasks />
       </div>

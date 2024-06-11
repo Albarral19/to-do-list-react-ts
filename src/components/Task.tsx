@@ -9,8 +9,8 @@ export function Task() {
   }
 
   return (
-    <div className="flex gap-3 items-start  bg-zinc-800 rounded-lg p-4 ">
-      <label className="cursor-pointer my-1">
+    <div className="flex items-start gap-3 rounded-lg bg-zinc-800 p-4">
+      <label className="my-1 cursor-pointer">
         <input
           type="checkbox"
           onChange={toggleCheckbox}
@@ -18,10 +18,10 @@ export function Task() {
           checked={checked}
         />
         <div
-          className={`size-4  rounded-full flex items-center justify-center transition-all  ${
+          className={`flex size-4 items-center justify-center rounded-full transition-all ${
             checked
-              ? "bg-indigo-600 border-none hover:bg-indigo-500"
-              : "border-sky-500 border hover:border-sky-400"
+              ? "border-none bg-indigo-600 hover:bg-indigo-500"
+              : "border border-sky-500 hover:border-sky-400"
           }`}
         >
           {checked && <Check size={10} weight="bold" />}
@@ -36,12 +36,8 @@ export function Task() {
         Integer urna inaaaterdum massa libero auctor neque turpis turpis semper.
         Duis vel sed sed sed sed fames integer.
       </p>
-      <div className="cursor-pointer hover:bg-zinc-700 rounded text-zinc-500 hover:text-red-400">
-        <Trash
-          className="my-1"
-          width={24}
-          weight="bold"
-        />
+      <div className="cursor-pointer rounded text-zinc-500 hover:bg-zinc-700 hover:text-red-400">
+        <Trash className="my-1" width={24} weight="bold" />
       </div>
     </div>
   );
