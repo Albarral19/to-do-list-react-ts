@@ -36,9 +36,9 @@ export function Task() {
         Integer urna inaaaterdum massa libero auctor neque turpis turpis semper.
         Duis vel sed sed sed sed fames integer.
       </p>
-      <div className="hover:bg-zinc-700 rounded">
+      <div className="cursor-pointer hover:bg-zinc-700 rounded text-zinc-500 hover:text-red-400">
         <Trash
-          className="my-1 text-zinc-500 cursor-pointer hover:text-red-400"
+          className="my-1"
           width={24}
           weight="bold"
         />
