@@ -34,7 +34,7 @@ export function Task() {
         }`}
       >
         Integer urna inaaaterdum massa libero auctor neque turpis turpis semper.
-        Duis vel sed fames integer.
+        Duis vel sed sed sed sed fames integer.
       </p>
       <div className="hover:bg-zinc-700 rounded">
         <Trash
