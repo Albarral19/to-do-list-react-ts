@@ -1,4 +1,5 @@
-import { Trash } from "@phosphor-icons/react";
+import ClipboardText from "../assets/Clipboard.svg";
+import { Task } from "./Task";
 
 export function Tasks() {
   return (
@@ -18,23 +19,16 @@ export function Tasks() {
         </div>
       </header>
       <main>
-        <div className="no-tasks">
-          <img src="" alt="" />
-          <p>Você ainda não tem tarefas cadastradas</p>
+        <div className="text-zinc-500 text-base flex leading-6 flex-col justify-center items-center border-t-zinc-800 border-t rounded-lg py-16">
+          <img
+            src={ClipboardText}
+            alt="Imagem de um clipboard"
+            className="pb-4"
+          />
+          <p className="font-bold">Você ainda não tem tarefas cadastradas</p>
           <p>Crie tarefas e organize seus itens a fazer</p>
         </div>
-        <div className="task">
-          <input type="checkbox" name="" id="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            qui mollitia, minus sit, fugit alias enim, id ullam inventore
-            obcaecati natus ad dolorem aliquid veniam? Numquam enim mollitia cum
-            veniam.
-          </p>
-          <div>
-            <Trash />
-          </div>
-        </div>
+        <Task />
       </main>
     </div>
   );
