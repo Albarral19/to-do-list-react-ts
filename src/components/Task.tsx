@@ -1,7 +1,7 @@
 import { Trash, Check } from "@phosphor-icons/react";
 import { TaskProps } from "../Types";
 
-export function Task({ task, onDeleteTask, onChangeTaskStatus }: TaskProps) {
+export function Task({ task, onChangeTaskStatus }: TaskProps) {
   return (
     <div className="flex items-start gap-3 rounded-lg bg-zinc-800 p-4">
       <label className="my-1 cursor-pointer">
