@@ -1,4 +1,10 @@
-import { useState, FormEvent, ChangeEvent, InvalidEvent } from "react";
+import {
+  useState,
+  FormEvent,
+  ChangeEvent,
+  MouseEvent,
+  InvalidEvent,
+} from "react";
 import { PlusCircle } from "@phosphor-icons/react";
 
 import { Header } from "./components/Header";
@@ -35,12 +41,15 @@ export function App() {
     };
   }
 
-  function deleteTask(taskToDelete: Task) {
-    const tasksWithoutDeleteOne = tasks.filter((task) => {
-      return task.id !== taskToDelete.id;
-    });
+  function deleteHandleTask(taskToDelete: Task) {
+    return (event: MouseEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      const tasksWithoutDeleteOne = tasks.filter((task) => {
+        return task.id !== taskToDelete.id;
+      });
 
-    setTasks(tasksWithoutDeleteOne);
+      setTasks(tasksWithoutDeleteOne);
+    };
   }
 
   function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
@@ -81,7 +90,7 @@ export function App() {
         </form>
         <TasksList
           tasks={tasks}
-          onDeleteTask={deleteTask}
+          onDeleteTask={deleteHandleTask}
           onChangeTaskStatus={createHandleTaskStatus}
         />
       </main>
