@@ -1,4 +1,4 @@
-import { ChangeEvent, MouseEvent } from "react";
+import { MouseEvent } from "react";
 
 export interface Task {
   id: number;
@@ -13,7 +13,7 @@ export interface TasksListProps {
   ) => (event: MouseEvent<HTMLButtonElement>) => void;
   onChangeTaskStatus: (
     taskToChangeStatus: Task,
-  ) => (event: ChangeEvent<HTMLInputElement>) => void;
+  ) => (event: MouseEvent<HTMLLabelElement>) => void;
 }
 
 export interface TaskProps {
@@ -23,5 +23,5 @@ export interface TaskProps {
   ) => (event: MouseEvent<HTMLButtonElement>) => void;
   onChangeTaskStatus: (
     taskToChangeStatus: Task,
-  ) => (event: ChangeEvent<HTMLInputElement>) => void;
+  ) => (event: MouseEvent<HTMLLabelElement>) => void;
 }

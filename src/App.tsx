@@ -29,7 +29,7 @@ export function App() {
   }
 
   function createHandleTaskStatus(taskToChangeStatus: Task) {
-    return (event: ChangeEvent<HTMLInputElement>) => {
+    return (event: MouseEvent<HTMLLabelElement>) => {
       event.preventDefault();
       const tasksAfterChangeStatus = tasks.map((task) => {
         return task.id === taskToChangeStatus.id
