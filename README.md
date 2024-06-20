@@ -47,20 +47,3 @@ Siga os passos abaixo para rodar o projeto localmente:
   ```
 
   4. Abra http://localhost:3000 no seu navegador para ver a aplicação em funcionamento.
-
-## Estrutura do Projeto
-```
-  ├── src
-  │   ├── components
-  │   ├── pages
-  │   ├── styles
-  │   ├── App.tsx
-  │   └── main.tsx
-  ├── .eslintrc.cjs
-  ├── .gitignore
-  ├── .prettierrc
-  ├── index.html
-  ├── package.json
-  ├── postcss.config.js
-  ├──
-```
