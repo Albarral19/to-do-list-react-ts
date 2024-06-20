@@ -4,15 +4,25 @@ import {
   ChangeEvent,
   MouseEvent,
   InvalidEvent,
+  useEffect,
 } from "react";
 import { PlusCircle } from "@phosphor-icons/react";
 
 import { Header } from "./components/Header";
 import { TasksList } from "./components/TasksList";
 import { Task } from "./Types";
+import {
+  loadTasksFromLocalStorage,
+  saveTasksToLocalStorage,
+} from "./utils/storage";
 
 export function App() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>(loadTasksFromLocalStorage());
+
+  useEffect(() => {
+    saveTasksToLocalStorage(tasks);
+  }, [tasks]);
+
   const [taskContent, setTaskContent] = useState("");
 
   function handleCreateNewTask(event: FormEvent) {
