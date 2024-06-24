@@ -74,7 +74,7 @@ export function App() {
   const isNewTaskContentEmpty = taskContent.length === 0;
 
   return (
-    <div className="h-screen bg-zinc-900">
+    <div>
       <Header />
       <main className="container mx-auto w-full px-4 md:w-[736px]">
         <form
